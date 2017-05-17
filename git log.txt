@@ -1,0 +1,199 @@
+git pull --rebate origin master
+
+git status
+
+vim .\version.html
+
+git status
+
+git add version.html
+
+git status
+
+git commit
+
+ls
+
+git status
+
+git push origin master
+
+C:\Users\admin\Documents\GitHub> cd .\wangmta.github.io
+C:\Users\admin\Documents\GitHub\wangmta.github.io [master +8 ~5 -0 !]> cd .\ruwebsite
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +8 ~5 -0 !]> git add -A
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +8 ~5 -0]> git commit -m "new contact us page"
+[master e2b99e2] new contact us page
+ 13 files changed, 346 insertions(+), 12 deletions(-)
+ create mode 100644 ruwebsite/checked.js
+ create mode 100644 ruwebsite/close.png
+ create mode 100644 ruwebsite/contact.css
+ create mode 100644 ruwebsite/contact.html
+ create mode 100644 ruwebsite/contact.js
+ create mode 100644 ruwebsite/jquery.min.js
+ create mode 100644 ruwebsite/sidebutton.png
+ create mode 100644 ruwebsite/slide.js
+ rewrite ruwebsite/top.png (99%)
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master]> git push
+To https://github.com/wangmta/wangmta.github.io.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/wangmta/wangmta.github.io.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master]> git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master]> git branch
+* master
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master]> git pull
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From https://github.com/wangmta/wangmta.github.io
+   a3674cb..f7baed8  master     -> origin/master
+Auto-merging ruwebsite/version.html
+CONFLICT (content): Merge conflict in ruwebsite/version.html
+Automatic merge failed; fix conflicts and then commit the result.
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +0 ~0 -1 !1 | +0 ~0 -0 !1]> git pull --rebase origin
+ master
+D       ruwebsite/Version.html
+U       ruwebsite/version.html
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution and make a commit.
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +0 ~0 -1 !1 | +0 ~0 -0 !1]> git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Changes to be committed:
+
+        deleted:    Version.html
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   version.html
+
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +0 ~0 -1 !1 | +0 ~0 -0 !1]> vim .\version.html
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +0 ~0 -1 !1 | +0 ~0 -0 !1]> vim .\version.html
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +0 ~0 -1 !1 | +0 ~0 -0 !1]> git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Changes to be committed:
+
+        deleted:    Version.html
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   version.html
+
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +0 ~0 -1 !1 | +0 ~0 -0 !1]> git add version.html
+warning: LF will be replaced by CRLF in ruwebsite/version.html.
+The file will have its original line endings in your working directory.
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +1 ~0 -1]> git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        deleted:    Version.html
+        new file:   version.html
+
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master +1 ~0 -1]> git commit
+[master 1cc71da] Merge branch 'master' of https://github.com/wangmta/wangmta.github.io
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master]> >>>>>>> f7baed8bd380f16975c28906d1ff877122483e09:ruwebsite/version.htmlls
+At line:1 char:5
++ >>>>>>> f7baed8bd380f16975c28906d1ff877122483e09:ruwebsite/version.ht ...
++     ~
+Missing file specification after redirection operator.
+At line:1 char:7
++ >>>>>>> f7baed8bd380f16975c28906d1ff877122483e09:ruwebsite/version.ht ...
++       ~
+Missing file specification after redirection operator.
+At line:1 char:5
++ >>>>>>> f7baed8bd380f16975c28906d1ff877122483e09:ruwebsite/version.ht ...
++     ~~
+The output stream for this command is already redirected.
+At line:1 char:7
++ >>>>>>> f7baed8bd380f16975c28906d1ff877122483e09:ruwebsite/version.ht ...
++       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The output stream for this command is already redirected.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingFileSpecification
+
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master]> ls
+
+
+    Directory: C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         3/1/2016   3:27 PM           9227 apple.png
+-a----        3/22/2016   4:35 PM         327627 back.jpg
+-a----        3/22/2016   5:33 PM         552579 bookmark.jpg
+-a----        3/22/2016   5:33 PM         362821 bus.jpg
+-a----        3/17/2016   6:01 PM          23569 bustext.png
+-a----         4/5/2016   5:00 PM            268 checked.js
+-a----         4/5/2016   9:37 PM           1861 close.png
+-a----         4/5/2016   9:48 PM           2012 contact.css
+-a----         4/5/2016  10:02 PM           2379 contact.html
+-a----         4/5/2016   4:47 PM           1580 contact.js
+-a----        2/23/2016   5:39 PM           2855 contact.png
+-a----         4/1/2016   1:47 PM            448 CSS rotate objects.txt
+-a----         4/1/2016  12:51 PM            194 fadeto.js
+-a----         3/1/2016   3:27 PM          16294 google.png
+-a----         4/2/2016  10:50 AM           9730 home.css
+-a----         4/5/2016  10:02 PM           3104 home.html
+-a----        3/30/2016   2:34 PM           2875 home.png
+-a----        8/25/2013   9:21 PM         152406 jQuery.js
+-a----         4/5/2016   9:58 PM          85658 jquery.min.js
+-a----        3/25/2016   1:10 PM           7085 line1.png
+-a----        3/22/2016   5:33 PM         528796 news.jpg
+-a----        2/23/2016   7:18 PM         441974 phone.png
+-a----        3/29/2016   4:27 PM           1674 placeholder.png
+-a----        2/29/2016   2:57 PM         220222 r.ico
+-a----         3/1/2016   1:20 PM         145348 roboto-regular.ttf
+-a----         3/1/2016   5:25 PM          11992 rulogo.png
+-a----         4/5/2016   2:16 PM           8904 sidebutton.png
+-a----         4/5/2016   9:33 PM           1037 slide.js
+-a----         4/1/2016   1:16 PM         120144 texture.jpg
+-a----         4/5/2016   5:19 PM           3856 top.png
+-a----         4/5/2016  11:29 AM            595 totop.js
+-a----         4/6/2016   2:54 PM          11003 version.html
+-a----        2/23/2016   5:39 PM           4293 version.png
+
+
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master]> git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master]> git push origin master
+Counting objects: 20, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 47.12 KiB | 0 bytes/s, done.
+Total 20 (delta 9), reused 0 (delta 0)
+To https://github.com/wangmta/wangmta.github.io.git
+   f7baed8..1cc71da  master -> master
+C:\Users\admin\Documents\GitHub\wangmta.github.io\ruwebsite [master]>

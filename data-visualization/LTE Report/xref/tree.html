@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" />
+<style>
+
+.node circle {
+  fill: rgb(66, 212, 244);
+}
+
+.node text {
+  font: 10px sans-serif;
+  color: rgb(98, 140, 123);
+}
+
+.node--internal circle {
+  fill: rgb(244, 65, 140);
+}
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+  color: rgb(98, 140, 123);
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.3;
+  stroke-width: 1.5px;
+}
+
+</style>
+</head>
+<body>
+<script src="//d3js.org/d3.v4.0.0-alpha.29.js"></script>
+<script src="treeDraw.js"></script>
+</body>
+</html>
